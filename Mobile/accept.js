@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("./dbConnection");
+const db = require("../dbConnection");
 
 // PUT /missions/:id/accept
 router.put("/acceptation/:id", (req, res) => {

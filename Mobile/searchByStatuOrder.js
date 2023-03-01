@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("./dbConnection");
+const db = require("../dbconnection");
 
 router.get('/searchByStatuOrder/:id_incident/:id',(req,res)=> {
 const {id,id_incident} =req.params;
@@ -15,7 +15,7 @@ const {id,id_incident} =req.params;
           res.status(404).send(` ${id} not found`);
           return;
         }
-        const statu = results[0].statu || false;
+        const statu = results[0].statu || false; 
 
         if ( statu) {
             

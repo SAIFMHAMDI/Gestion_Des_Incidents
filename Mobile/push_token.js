@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("./dbConnection");
+const db = require("../dbConnection");
 const bodyParser = require("body-parser");
 
 router.post("/push_token/:id", (req, res) => {

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("./dbConnection");
+const db = require("../dbConnection");
  
 router.post("/favoris/:id", (req, res) => {
   const { id} = req.params;

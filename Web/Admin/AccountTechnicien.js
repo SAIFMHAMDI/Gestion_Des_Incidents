@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("./dbConnection");
+const db = require("../../dbconnection");
 
 router.post("/AccountTechnicien", (req, res) => {
     const {nom,prenom,code_postal,telephone,email,password,device_type} = req.body;

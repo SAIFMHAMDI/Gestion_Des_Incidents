@@ -1,14 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../dbConnection");
+const db = require("../../dbConnection");
 const bcrypt = require("bcryptjs");
 
-router.post("/setMail/:id", async (req, res) => {
+router.post("/setMailOperateur/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const { email } = req.body;
 
-    const results = await db.query(`SELECT email FROM techniciens WHERE id = ?`, [id, email]);
+    const results = await db.query(`SELECT email FROM operateur WHERE id = ?`, [id, email]);
     console.log(results);
 
     res.json({
@@ -29,7 +29,7 @@ router.post("/setMail/:id", async (req, res) => {
 //The token code not yet done (matansouuch*********************************)
 
 
-router.post("/resetPassword", (req, res) => {
+router.post("/resetPasswordOperateur", (req, res) => {
     console.log(req.body);
     const { email, password } = req.body;
     // Hash the new password
@@ -38,7 +38,7 @@ router.post("/resetPassword", (req, res) => {
         console.log(err);
         res.status(500).send("Internal Server Error");
       } else {
-        const query = `UPDATE techniciens SET password = '${hash}' WHERE email = '${email}' `;
+        const query = `UPDATE operateur SET password = '${hash}' WHERE email = '${email}' `;
         db.query(query, (error, results) => {
             console.log(results);
           if (error) {
@@ -51,8 +51,5 @@ router.post("/resetPassword", (req, res) => {
       }
     });
   });
-  
- 
-
 
 module.exports = router;

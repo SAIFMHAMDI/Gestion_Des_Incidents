@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../dbConnection");
+const db = require("../../dbConnection");
 
-router.get("/message/:id", (req, res) => {
-  const { id } = req.params;
+router.get("/ListMission/:id_operateur", (req, res) => {
+  const { id_operateur } = req.params;
  
 
-  db.query(`SELECT * FROM message WHERE id_technicien = ?`, [id], (error, results) => {
-    if (error) {
+  db.query(`SELECT * FROM incidents WHERE id_operateur = ?`, [id_operateur], ( error,results) => {
+    if (error ) {
       res.json({
         result: false,
         result_code: 0,
@@ -22,6 +22,7 @@ router.get("/message/:id", (req, res) => {
         result_message: "Success",
         data :results
      });
+     
     }
   });
 });

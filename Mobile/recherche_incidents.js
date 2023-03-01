@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("./dbConnection");
+const db = require("../dbConnection");
 
 router.get("/search/:id", (req, res) => {
   const { id } = req.params;

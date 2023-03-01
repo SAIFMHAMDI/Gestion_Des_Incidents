@@ -2,7 +2,7 @@ const express = require("express");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
 const router = express.Router();
-const db = require("./dbConnection");
+const db = require("../dbConnection");
 
 router.post("/envoie_message/:id_technicien/:id_admin/:id_discussion", (req, res) => {
   const {content } = req.body;

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("./dbConnection");
+const db = require("../dbConnection");
 
 // API endpoint to enable/disable notifications
 router.put("/ToggleNotif/:id", (req, res) => {

@@ -4,7 +4,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
-const db = require("./Mobile/dbconnection");
+const db = require("./dbconnection");
 const loginRouter = require("./Mobile/login");
 const resetPassword = require("./Mobile/resetPassword");
 const ToggleNotifRouter = require("./Mobile/ToggleNotif");
@@ -26,6 +26,12 @@ const AccountTechnicienRouter = require("./Web/Admin/AccountTechnicien");
 const AccountOperateurRouter = require("./Web/Admin/OperateurAccount");
 const CategorieOperateurRouter = require("./Web/Admin/CategorieOperateur");
 const SendMissionsRouter = require("./Web/Admin/SendMissions");
+const loginOperateurRouter = require("./Web/Operateur/loginOperateur");
+const resetPasswordOperateurRouter = require("./Web/Operateur/resetPasswordOperateur");
+const AddMissionRouter = require("./Web/Operateur/AddMission");
+const ListMissionRouter = require("./Web/Operateur/ListMission");
+const ReclamationRouter = require("./Web/Operateur/Reclamation");
+
 
 const app = express();
 app.use(express.json());
@@ -42,11 +48,15 @@ app.use(cors());
 app.use(missionRouter);
 app.use(EnvoieMessageRouter);
 app.use(AccountTechnicienRouter);
+app.use(ListMissionRouter);
+app.use(AddMissionRouter);
 app.use(SendMissionsRouter);
 app.use(AccountOperateurRouter);
 app.use(CategorieOperateurRouter);
 app.use(notificationsRouter);
+app.use(ReclamationRouter);
 app.use(loginAdminRouter);
+app.use(loginOperateurRouter);
 app.use(searchByAdressOrderRouter);
 app.use(searchByStatuAdressRouter);
 app.use(push_tokenRouter);
@@ -59,6 +69,7 @@ app.use(confirmationRouter);
 app.use(acceptationRouter);
 app.use(loginRouter);
 app.use(resetPassword);
+app.use(resetPasswordOperateurRouter);
 app.use(ToggleNotifRouter);
 
  // Handling Errors
