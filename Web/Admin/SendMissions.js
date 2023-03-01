@@ -4,6 +4,7 @@ const db = require("../../dbconnection");
 
 router.post("/SendMissions", (req, res) => {
   const { disponibilité, titre, message } = req.body;
+  if(titre && message){
   const selectTechnicianQuery = `
     SELECT id
     FROM techniciens
@@ -13,8 +14,7 @@ router.post("/SendMissions", (req, res) => {
   db.query(selectTechnicianQuery, [disponibilité], (error, results) => {
     if (error) {
       console.log(error);
-      res.setHeader('Content-Type', 'application/json');
-      res.status(500).json({
+      return res.status(500).json({
         result: false,
         result_code: 0,
         result_message: "Error selecting technicians",
@@ -35,30 +35,28 @@ router.post("/SendMissions", (req, res) => {
           (error, results) => {
             if (error) {
               console.log(error);
-              if (j === technicians.length - 1) {
-                res.setHeader('Content-Type', 'application/json');
-                res.status(500).json({
-                  result: false,
-                  result_code: 0,
-                  result_message: "Error Sending...",
-                });
-              } 
-            } else {
-              if (j === technicians.length - 1) {
-                res.setHeader('Content-Type', 'application/json');
-                res.status(200).json({
-                  result: true,
-                  result_code: 1,
-                  result_message: "Mission Sent Successfully...",
-                });
-              }
-            }
+           return res.send("Error Sending Missions...")
+            } 
           }
         );
+        if (j === technicians.length - 1) {
+         
+         return  res.status(200).json({
+            result: true,
+            result_code: 1,
+            result_message: "Mission Sended Successfully...",
+          });
+        } 
         j++;
       }   while (j  <  technicians.length );
     }
   });
-}); 
+}else {
+  return  res.status(500).json({
+    result: false,
+    result_code: 0,
+    result_message: "Error Sending Missions...",
+  });
+}}); 
 
 module.exports = router;
