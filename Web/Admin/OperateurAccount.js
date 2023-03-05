@@ -45,6 +45,30 @@ router.delete("/operateurDelete/:id", (req, res) => {
  } });
   
 });
+router.post('/updateOperateur/:id',(req,res)=>{
+  const {id}= req.params
+  const {Name ,email,telephone, password} = req.body;
+  db.query("UPDATE operateur SET Name = ? , email = ? , telephone = ?, password = ? WHERE id = ? ;",[Name ,email,telephone, password,id],(error,results)=>{
+    console.log(results);
+    if (error) { {
+      res.json({
+        result: false,
+        result_code: 0,
+        result_message: "Failed To Update Operateur Account",
+      })
+    }
+  }else {
+      res.json({
+    result: true,
+    result_code: 1,
+    result_message: "Account Updated Successfully...",
+  
+    
+  })
+}
+
+  })
+})
 
 
 

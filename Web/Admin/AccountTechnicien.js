@@ -45,6 +45,31 @@ router.delete("/technicienDelete/:id", (req, res) => {
  } });
   
 });
+router.post('/updateTechnicien/:id',(req,res)=>{
+  const {id}= req.params
+  const {nom ,prenom, code_postal,telephone,password,email,device_type} = req.body;
+  db.query("UPDATE techniciens SET nom = ? , prenom = ? , code_postal = ?, telephone = ? , password = ?, email = ? , device_type = ? WHERE id = ? ;",[id,nom ,prenom, code_postal,telephone,password,email,device_type],(error,results)=>{
+    console.log(results);
+ 
+    if (error) { {
+      res.json({
+        result: false,
+        result_code: 0,
+        result_message: "Failed To Update Technicien Account",
+      })
+    }
+  }else {
+      res.json({
+    result: true,
+    result_code: 1,
+    result_message: "Account Updated Successfully",
+  
+    
+  })
+}
+
+  })
+})
 
 
 
