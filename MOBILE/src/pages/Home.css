@@ -1,0 +1,372 @@
+.container-input{
+    width: 300px;
+    height: 400px;
+ margin:auto;
+ margin-top: 10%;
+border-radius: 5%;
+background-color: rgb(255, 255, 255);
+
+}
+.span{
+    margin-top: 20%;
+    color: rgb(0, 0, 0);
+ margin-left: 10%;
+ font-size: 30px;
+
+}
+.span1{
+    color: rgb(206, 205, 205);
+ margin-left: 10%;;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.login_btn{
+
+margin:auto;
+margin-top: 30%;
+background-color: blueviolet;
+
+}
+
+
+.forget-pwd{
+    font-size: 10px;
+    margin-top: 5%;
+   margin-left: 70%;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.Feedback-container{
+  margin-top: 20%;
+}
+
+
+.uploadBtn{
+  width: 300px;
+  margin-top: 20%;
+  margin-left: 10%;
+}
+.photo{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: 5%;
+}
+.toggle{
+  margin-left: 70%;
+  margin-top: 10px;
+}
+
+.error-message{
+  font-size: 10px;
+  color: red;
+}
+input[type="file"] {
+  color: transparent;
+
+  border-radius: 4px;
+ 
+
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #bec1c5;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 6px;
+  cursor: pointer;
+  font-size: 12px;
+  width: 120px;
+  height: 30px;
+  
+}
+
+input[type="file"]::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+.input-Description{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.offline{
+ 
+  margin-left: 35%;
+  margin-top: 50%;
+  font-size: 130px
+}
+
+.photo-container{
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 0 auto;
+  position: absolute;
+  top: -75px; /* half of the container height */
+}
+.profile-card{
+  margin-top: 40px;
+}
+.my-photo {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
+  margin: auto;
+}
+.name-container{
+  font-size: larger;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.icons{
+  margin-left: 20%;
+  
+}
+.email-container{
+ margin-top: 10%;
+  font-size: 22px;
+ color: #bec1c5;
+ font-family: 'Times New Roman', Times, serif;
+
+}
+.phone-container{
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+ color: #bec1c5;
+
+}
+.informations{
+  width: 370px;
+  height: 250px;
+margin:auto;
+margin-top: 10%;
+border-radius: 5%;
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.mail_icon{
+  margin-top: 20px;
+}
+.information_text{
+  font-size: 25px;
+  margin-left: 10%;
+ font-family: 'Times New Roman', Times, serif;
+}
+.chat-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+}
+.chat-form{
+
+  margin-top: 10px;
+}
+.message-container {
+  overflow-y: scroll;
+  flex-direction: column-reverse;
+  height: 600px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.sent {
+  background-color: #c6d3f8;
+  align-self: flex-end;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.received {
+  background-color: #f3f3f3;
+  align-self: flex-start;
+  margin-right: 20%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  margin-left: 10px;
+  
+}
+
+
+
+.text {
+  display: block;
+}
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+
+
+.send-button {
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.send-button:hover {
+  background-color: #0062cc;
+}
+.date-envoi{
+  font-size: 10px;
+  margin-left: 60%;
+}
+
+
+.notification-content {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.notification h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.notification p {
+  font-size: 14px;
+}
+
+.notification-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification-footer span {
+  font-size: 12px;
+}
+
+.notification-footer svg {
+  width: 12px;
+  height: 12px;
+}
+
+.logout {
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+}
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+}
+
+.notification {
+  padding: 10px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #ffffff;
+
+}
+
+.notification:hover {
+  background-color: #ebe8e8;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: #000000;
+}
+
+.modal h2 {
+  margin-top: 0;
+  color: #450374;
+}
+
+.modal button {
+  margin-top: 10px;
+  background-color: #450374;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #7e0cb7;
+ 
+}
+
+.accept_btn{
+  width: 70px;
+  height: 40px;
+  
+}
+.date{
+  font-size: 10px;
+  margin-left:70%;
+  color:rgb(169, 167, 167)
+}
+.content-grey-bg{
+  --background: #f9f9f9;
+}
+.hz-favorite{
+  --background: #c59708;
+}
+.sigCanvas{
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+

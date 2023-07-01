@@ -1,0 +1,241 @@
+.container-input{
+  width: 300px;
+  height: 400px;
+margin:auto;
+margin-top: 10%;
+border-radius: 5%;
+background-color: rgb(255, 255, 255);
+
+}
+.span{
+  margin-top: 20%;
+  color: rgb(0, 0, 0);
+margin-left: 10%;
+font-size: 30px;
+
+}
+.span1{
+  color: rgb(206, 205, 205);
+margin-left: 10%;;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.login_btn{
+
+margin:auto;
+margin-top: 30%;
+background-color: blueviolet;
+
+}
+
+
+.forget-pwd{
+  font-size: 10px;
+  margin-top: 5%;
+ margin-left: 70%;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.Feedback-container{
+margin-top: 20%;
+}
+
+
+.uploadBtn{
+width: 300px;
+margin-top: 20%;
+margin-left: 10%;
+}
+.photo{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 20px;
+margin-left: 5%;
+}
+.toggle{
+margin-left: 70%;
+margin-top: 10px;
+}
+
+.error-message{
+font-size: 10px;
+color: red;
+}
+input[type="file"] {
+color: transparent;
+
+border-radius: 4px;
+
+
+cursor: pointer;
+font-size: 16px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+background-color: #bec1c5;
+border: none;
+color: #fff;
+border-radius: 4px;
+padding: 1px 6px;
+cursor: pointer;
+font-size: 12px;
+width: 120px;
+height: 30px;
+
+}
+
+input[type="file"]::-moz-focus-inner {
+border: none;
+padding: 0;
+}
+.input-Description{
+margin-left: 5%;
+margin-right: 5%;
+}
+
+.offline{
+
+margin-left: 35%;
+margin-top: 50%;
+font-size: 130px
+}
+
+.photo-container{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+overflow: hidden;
+margin-left: 0 auto;
+position: relative;
+top: -75px; /* half of the container height */
+}
+
+.my-photo {
+
+z-index: 1;
+top: 0;
+left: 0;
+right: 0;
+
+margin: auto;
+}
+.name-container{
+font-size: larger;
+margin-left: 15%;
+margin-top: 10%;
+}
+
+.icons{
+margin-left: 20%;
+
+}
+.email-container{
+margin-top: 10%;
+font-size: 22px;
+color: #bec1c5;
+font-family: 'Times New Roman', Times, serif;
+
+}
+.phone-container{
+font-size: 22px;
+font-family: 'Times New Roman', Times, serif;
+color: #bec1c5;
+
+}
+.informations{
+width: 370px;
+height: 200px;
+margin:auto;
+margin-top: 10%;
+border-radius: 5%;
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.mail_icon{
+margin-top: 20px;
+}
+.information_text{
+font-size: 25px;
+margin-left: 10%;
+font-family: 'Times New Roman', Times, serif;
+}
+.chat-input {
+padding: 10px;
+border: none;
+border-radius: 5px;
+background-color: #f5f5f5;
+width: 100%;
+box-sizing: border-box;
+font-size: 16px;
+margin-bottom: 10px;
+
+}
+.chat-form{
+
+margin-top: 10px;
+}
+.message-container {
+overflow-y: scroll;
+flex-direction: column-reverse;
+height: 600px;
+}
+
+.message {
+margin-bottom: 10px;
+padding: 10px;
+border-radius: 5px;
+max-width: 80%;
+}
+
+.sent {
+background-color: #dcf8c6;
+align-self: flex-end;
+margin-left:20%;
+margin-bottom: 10px;
+height: 50px;
+
+}
+
+.received {
+background-color: #f5f5f5;
+align-self: flex-start;
+
+
+}
+
+
+
+.text {
+display: block;
+}
+.chat-container {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+
+
+
+
+.send-button {
+background-color: #007aff;
+color: #fff;
+border: none;
+padding: 8px 16px;
+border-radius: 4px;
+font-size: 20px;
+cursor: pointer;
+
+}
+
+.send-button:hover {
+background-color: #0062cc;
+}
+.date-envoi{
+font-size: 10px;
+margin-left: 60%;
+}

@@ -1,0 +1,202 @@
+background-color: rgba(186, 190, 190, 0.548);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+.login_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login_container {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.login_title {
+  color: #8e2de2;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login_subtitle {
+  color: #333;
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.login-input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+.form_error_message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.login-btn {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: #8e2de2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #4a00e0;
+}
+
+
+
+/* inscription */
+
+.left-column{
+  width: 700px; /* adjust to your desired width */
+  height: 650px; /* adjust to your desired height */
+  padding: 40px; /* reduce the padding value */
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  margin-left: 10px;
+}
+
+
+.Inscription_title {
+  color: #8e2de2;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Inscription_subtitle {
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  font-family: Arial, sans-serif; /* change the font to Arial or a similar sans-serif font */
+  text-transform: uppercase; /* make the text uppercase */
+  letter-spacing: 2px; /* increase the spacing between letters */
+  line-height: 1.2; /* adjust the line height for better readability */
+}
+
+
+.Inscription-input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+.form_error_message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.inscription-btn {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: #8e2de2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.inscription-btn:hover {
+  background-color: #4a00e0;
+}
+
+
+
+
+
+/* inscription operateur  */
+
+.right-column {
+  width: 700px; /* adjust to your desired width */
+  height: 450px; /* adjust to your desired height */
+  padding: 40px; /* reduce the padding value */
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3); 
+margin-left: 20px; 
+}
+
+.login-register-link{
+  width: 50%;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 110px;
+  background-color: #a966e3;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.login-register-link:hover {
+  background-color: #4a00e0;
+}
+
+
+.Reset-link{
+  display : block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #8e2de2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+.left-column-tech{
+  width: 600px; /* adjust to your desired width */
+  /* adjust to your desired height */
+  padding: 40px; /* reduce the padding value */
+  background-color: #fff;
+  border-radius: 30px;
+ 
+
+}
+.right-column-tech{
+  width: 600px; /* adjust to your desired width */
+  /* adjust to your desired height */
+  padding: 40px; /* reduce the padding value */
+  background-color: #fff;
+  border-radius: 30px;
+ 
+
+}

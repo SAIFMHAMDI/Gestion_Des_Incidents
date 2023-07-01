@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SaveMe</string>
+    <string name="title_activity_main">SaveMe</string>
+    <string name="package_name">saveme.app.sh</string>
+    <string name="custom_url_scheme">saveme.app.sh</string>
+</resources>

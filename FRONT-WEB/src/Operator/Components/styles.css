@@ -1,0 +1,300 @@
+.fab {
+    position: fixed;
+    right: 30px;
+    bottom: 38px;
+    border-radius: 50%;
+  }
+  
+  button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .fab > button {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 0;
+    background: #7352ff;
+    color: #f9f9f9;
+    transform: 0.2s;
+  }
+  
+  .fab > button > i {
+    font-size: 32px;
+  }
+  
+  .menu {
+    position: absolute;
+    bottom: 76px;
+    left: 0;
+    display: grid;
+    place-content: center;
+    gap: 12px;
+    width: 64px;
+    transform: translate(0, 80%);
+    transform-origin: 50% 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.375s;
+  }
+  
+  .fab.open > button {
+    transform: rotate(45deg);
+  }
+  
+  .fab.open .menu {
+    transform: translate(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu > button {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: #e0e0e0;
+    transition: 0.3s;
+  }
+  
+  .menu > button:hover {
+    background: rgba(255, 255, 255, 0.16);
+  }
+  
+  .menu > button > span {
+    position: absolute;
+    right: 64px;
+    white-space: nowrap;
+    transform: translate(10px, 0);
+    opacity: 0;
+    visibility: hidden;
+    font-size: 16px;
+    transition: 0.5s;
+  }
+  
+  .menu > button:hover > span {
+    transform: translate(0);
+   
+  }
+  
+/* Style for the Icon */
+.menu > button > .material-icons-outlined {
+    font-size: 24px; /* Set the font size */
+    margin-right: 8px; /* Add some margin */
+    color: #ffffff; /* Set the icon color */
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.4); /* Add a text shadow */
+  }
+  
+  /* Style for the span */
+  .menu > button > span {
+    font-size: 16px; /* Set the font size */
+    font-weight: bold; /* Add some weight */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 1px; /* Add some letter spacing */
+    color: #ffffff; /* Set the text color */
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.4); /* Add a text shadow */
+  }
+  
+  .login_container {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: auto; 
+  height: auto; 
+  padding: 40px;
+  margin-top: 50px;
+  
+  margin-right: 50px;
+ 
+  }
+ 
+    .search-mission > input {
+      border: none;
+      border-bottom: 1px solid rgb(254, 252, 252); /* add a bottom border for visual clarity */
+      outline: none;
+      margin-right: 40px;
+      margin-left: 80%;
+    margin-top : 20px;
+    margin-bottom: 0px;
+    }
+
+    .search-mission > input:focus {
+      border: none;
+      box-shadow: none; /* remove the default focus box-shadow */
+    }
+
+
+
+    .add-button {
+      background-color: #6441a5; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+     margin-top: 0px;
+     margin-bottom: 0px;
+      margin-left: 10px;
+    }
+    
+    .add-button:hover {
+      background-color: #755fbe; /* Darker green */
+    }
+
+
+
+
+    /* modal************************* */
+
+
+    body.active-modal {
+      overflow-y: hidden;
+  }
+  
+  .btn-modal {
+      padding: 10px 20px;
+      display: block;
+      margin: 100px auto 0;
+      font-size: 18px;
+  }
+  
+  .modal, .overlay {
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+  }
+  
+  .overlay {
+      background: rgba(49,49,49,0.8);
+  }
+  .modal-content {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 1.4;
+      background: #f1f1f1;
+      padding: 14px 28px;
+      border-radius: 3px;
+      max-width: 600px;
+      min-width: 300px;
+  }
+  
+  .close-modal {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 7px;
+  }
+
+
+
+
+  
+  .addMission {
+     /* adjust to your desired width */
+    height: 670px; /* adjust to your desired height */
+    padding: 40px; /* reduce the padding value */
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    margin: 0 auto;
+    width: 650px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Inscription {
+    width: 580px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+  }
+
+
+  .inscription-button {
+    width: 500px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: #8e2de2;
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+  .InscriptionSubtitle{
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    font-family: Arial, sans-serif; /* change the font to Arial or a similar sans-serif font */
+    text-transform: uppercase; /* make the text uppercase */
+    letter-spacing: 2px; /* increase the spacing between letters */
+    line-height: 1.2; /* adjust the line height for better readability */
+  }
+
+
+ 
+
+
+
+
+
+
+  .add-btn {
+    background-color: #517eee; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+   margin-top: 0px;
+   margin-bottom: 10px;
+    margin-left: 40px;
+  }
+  
+  .add-btn:hover {
+    background-color: #8aacf5; /* Darker green */
+  }
+  .close-button{
+    margin-left:95%;
+    
+    font-size: 24px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+   
+  }
