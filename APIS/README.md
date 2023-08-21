@@ -24,31 +24,31 @@ The project employs SQL for database management, allowing efficient storage, ret
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot-1.png)
+![Screenshot 1](../screenshots/screenshot-1.png)
 *Caption for Screenshot 1*
 
-![Screenshot 2](screenshots/screenshot-2.png)
+![Screenshot 2](../screenshots/screenshot-2.png)
 *Caption for Screenshot 2*
 
-![Screenshot 3](screenshots/screenshot-3.png)
+![Screenshot 3](../screenshots/screenshot-3.png)
 *Caption for Screenshot 3*
 
-![Screenshot 3](screenshots/screenshot-4.png)
+![Screenshot 3](../screenshots/screenshot-4.png)
 *Caption for Screenshot 4*
 
-![Screenshot 3](screenshots/screenshot-5.png)
+![Screenshot 3](../screenshots/screenshot-5.png)
 *Caption for Screenshot 5*
 
-![Screenshot 3](screenshots/screenshot-6.png)
+![Screenshot 3](../screenshots/screenshot-6.png)
 *Caption for Screenshot 6*
 
-![Screenshot 3](screenshots/screenshot-7.png)
+![Screenshot 3](../screenshots/screenshot-7.png)
 *Caption for Screenshot 7*
 
-![Screenshot 3](screenshots/screenshot-8.png)
+![Screenshot 3](../screenshots/screenshot-8.png)
 *Caption for Screenshot 8*
 
-![Screenshot 3](screenshots/screenshot-9.png)
+![Screenshot 3](../screenshots/screenshot-9.png)
 *Caption for Screenshot 9*
 
 
